@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
 var engine, world;
-var paper1,ground,bin1,sling,gd;
+var paper1,ground,bin1,sling,gd,gd2;
 
 function setup() {
 	createCanvas(1000, 500);
@@ -14,6 +14,7 @@ function setup() {
 	sling = new SlingShot(paper1.body,{x:450, y:150});
 	ground = new Ground(500,480,1000,20);
   gd = new Ground(500,10,1000,20);
+	gd2 = new Ground(999,250,800,5):
 	bin1 = new dusbin(900,460,1,10);
 	Engine.run(engine);
 }
